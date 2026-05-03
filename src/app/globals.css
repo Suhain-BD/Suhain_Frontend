@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: hsl(164, 25%, 98%);
+  --foreground: hsl(164, 30%, 10%);
+  
+  --primary: hsl(164, 100%, 15%);
+  --primary-foreground: hsl(164, 25%, 98%);
+  
+  --secondary: hsl(43, 52%, 42%);
+  --secondary-foreground: hsl(164, 25%, 98%);
+  
+  --accent: hsl(43, 100%, 65%);
+  --accent-foreground: hsl(164, 30%, 10%);
+  
+  --muted: hsl(164, 15%, 90%);
+  --muted-foreground: hsl(164, 15%, 40%);
+  
+  --border: hsl(164, 15%, 85%);
+  --input: hsl(164, 15%, 85%);
+  --ring: hsl(164, 100%, 15%);
+
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: hsl(164, 30%, 4%);
+  --foreground: hsl(164, 25%, 98%);
+  
+  --primary: hsl(164, 100%, 18%);
+  --primary-foreground: hsl(164, 25%, 98%);
+  
+  --secondary: hsl(43, 52%, 42%);
+  --secondary-foreground: hsl(164, 25%, 98%);
+  
+  --accent: hsl(43, 100%, 60%);
+  --accent-foreground: hsl(164, 30%, 4%);
+  
+  --muted: hsl(164, 20%, 12%);
+  --muted-foreground: hsl(164, 15%, 65%);
+  
+  --border: hsl(164, 20%, 18%);
+  --input: hsl(164, 20%, 18%);
+  --ring: hsl(164, 100%, 25%);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-accent/30 selection:text-accent-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-white/90 to-white/60;
+  }
+  .gold-gradient {
+    @apply bg-gradient-to-r from-[#B8860B] via-[#FFD700] to-[#DAA520];
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/20 rounded-full hover:bg-muted-foreground/40 transition-colors;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
 }
