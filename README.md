@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Suhain
 
-## Getting Started
+**Suhain** is a modern fragrance brand platform built for people who prefer subtle, balanced, and elegant scents for everyday wear.
+It focuses on delivering fragrances that feel natural, clean, and effortlessly sophisticated.
 
-First, run the development server:
+> *“Smell fresh, anytime, anywhere.”*
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# ✨ Why Suhain?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Most fragrances are loud and overpowering.
+Suhain is built for those who prefer something more personal — a scent that feels **right on the skin**, not overwhelming the room.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+We design fragrances that are:
+- Clean
+- Balanced
+- Easy to wear daily
+- Subtly elegant
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+# 🧴 What We Create
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🌸 Sophisticated fragrances for everyday elegance
+- ⚖️ Carefully balanced compositions with depth and clarity
+- ⏳ Long-lasting scents with a smooth, refined finish
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+# 🧠 Our Philosophy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+At Suhain, every fragrance is crafted with precision.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We focus on:
+- Harmony in scent composition
+- Texture and layering of notes
+- Wearability in real-life situations
+
+Nothing is loud. Nothing is excessive.
+Everything is intentional.
+
+---
+
+# 🌟 For You
+
+Suhain is made for individuals who value:
+- Understated luxury
+- Quiet confidence
+- Presence without effort
+- Elegance without excess
+
+---
+
+# 🛠️ Tech Stack
+
+This project is built using a modern full-stack architecture:
+
+### Frontend
+- ⚛️ Next.js (React Framework)
+- 🎨 Tailwind CSS
+- ⚡ TypeScript
+
+### Backend
+- 🟢 Node.js
+- 🚀 Express.js
+- 🧠 TypeScript
+
+### Database
+- 🍃 MongoDB
+
+### Other Tools
+- 🔐 Firebase JWT Authentication
+- 🧩 REST API Architecture
+- 📦 Mongoose ORM
+- 🧪 Postman (API Testing)
+
+---
+
+# 📦 Features (Planned / In Progress)
+- 🛍️ Product listing (fragrances)
+- 🔍 Product search & filtering
+- 🧾 Product details page
+- 🛒 Cart system
+- 👤 User authentication
+- ❤️ Wishlist system
+- 📊 Admin dashboard
+- 📦 Order management
+
+---
