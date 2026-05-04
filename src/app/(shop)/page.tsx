@@ -22,10 +22,10 @@ export default function HomePage() {
         >
           <source src="/Shuian_Webvideo.mp4" type="video/mp4" />
         </video>
-        
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
-        
+
         {/* Content */}
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <motion.div
@@ -37,7 +37,7 @@ export default function HomePage() {
               Luxury Collection 2024
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 tracking-tight leading-[1.1]">
-              The Art of <br /> 
+              The Art of <br />
               <span className="text-accent italic font-light">Ethereal</span> Scents
             </h1>
             <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
@@ -53,11 +53,11 @@ export default function HomePage() {
             </div>
           </motion.div>
         </div>
-        
+
         {/* Scroll Indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-           <span className="text-[10px] text-white/50 tracking-[0.2em] uppercase">Scroll to explore</span>
-           <div className="w-[1px] h-12 bg-gradient-to-b from-accent to-transparent" />
+          <span className="text-[10px] text-white/50 tracking-[0.2em] uppercase">Scroll to explore</span>
+          <div className="w-1px h-12 bg-linear-to-b from-accent to-transparent" />
         </div>
       </section>
 
@@ -97,18 +97,18 @@ export default function HomePage() {
               { title: "For Her", desc: "Elegant, floral, and gracefully feminine.", img: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=crop" },
               { title: "Signature", desc: "Our most exclusive and unique blends.", img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=800&auto=format&fit=crop" }
             ].map((cat, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 whileHover={{ y: -10 }}
                 className="group relative h-[500px] overflow-hidden rounded-2xl cursor-pointer"
               >
-                <Image 
-                  src={cat.img} 
-                  alt={cat.title} 
-                  fill 
-                  className="object-cover transition-transform duration-700 group-hover:scale-110" 
+                <Image
+                  src={cat.img}
+                  alt={cat.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8 w-full">
                   <h3 className="text-2xl font-serif font-bold text-white mb-2">{cat.title}</h3>
                   <p className="text-white/60 text-sm mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500">{cat.desc}</p>
@@ -132,13 +132,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {[1, 2, 3, 4].map((id) => (
             <div key={id} className="group flex flex-col gap-4">
-              <div className="relative aspect-[3/4] overflow-hidden rounded-2xl bg-muted">
+              <div className="relative aspect-3/4 overflow-hidden rounded-2xl bg-muted">
                 <div className="absolute top-4 left-4 z-10 px-2 py-1 glass text-[10px] font-bold uppercase tracking-tighter rounded">New</div>
                 <button className="absolute top-4 right-4 z-10 p-2 rounded-full glass hover:bg-accent hover:text-white transition-all opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0">
                   <FiPlay className="w-4 h-4" />
                 </button>
                 <div className="w-full h-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center text-muted-foreground/30 font-serif italic text-xl">
-                   Suhain No. {id}
+                  Suhain No. {id}
                 </div>
                 <div className="absolute inset-x-0 bottom-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                   <Button variant="gold" className="w-full rounded-xl">Quick Add</Button>
@@ -157,18 +157,18 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-32 px-6">
         <div className="max-w-5xl mx-auto relative h-[400px] rounded-3xl overflow-hidden flex items-center justify-center text-center px-12">
-           <Image 
-             src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25?q=80&w=1200&auto=format&fit=crop" 
-             alt="CTA Background" 
-             fill 
-             className="object-cover" 
-           />
-           <div className="absolute inset-0 bg-primary/60 backdrop-blur-sm" />
-           <div className="relative z-10">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-8">Personalize Your Scent</h2>
-              <p className="text-white/80 mb-10 max-w-xl mx-auto">Not sure which one to choose? Take our fragrance quiz to find your perfect match.</p>
-              <Button size="lg" variant="gold" className="px-12 rounded-full">Start Scent Quiz</Button>
-           </div>
+          <Image
+            src="https://images.unsplash.com/photo-1615484477778-ca3b77940c25?q=80&w=1200&auto=format&fit=crop"
+            alt="CTA Background"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-primary/60 backdrop-blur-sm" />
+          <div className="relative z-10">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-8">Personalize Your Scent</h2>
+            <p className="text-white/80 mb-10 max-w-xl mx-auto">Not sure which one to choose? Take our fragrance quiz to find your perfect match.</p>
+            <Button size="lg" variant="gold" className="px-12 rounded-full">Start Scent Quiz</Button>
+          </div>
         </div>
       </section>
     </div>

@@ -32,14 +32,14 @@ const Header = () => {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
-        isScrolled 
-          ? "bg-background/80 backdrop-blur-lg border-b border-border py-3" 
+        isScrolled
+          ? "bg-background/80 backdrop-blur-lg border-b border-border py-3"
           : "bg-transparent"
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className="lg:hidden text-foreground"
           onClick={() => setIsMobileMenuOpen(true)}
         >
@@ -47,8 +47,8 @@ const Header = () => {
         </button>
 
         {/* Logo */}
-        <Link 
-          href="/" 
+        <Link
+          href="/"
           className="text-2xl font-serif font-bold tracking-widest text-foreground flex items-center gap-2"
         >
           <span className="text-accent">S</span>UHAIN
@@ -90,9 +90,9 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu Overlay */}
-      <div 
+      <div
         className={cn(
-          "fixed inset-0 bg-background z-[60] lg:hidden transition-transform duration-500",
+          "fixed inset-0 bg-background z-60 lg:hidden transition-transform duration-500",
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         )}
       >
