@@ -20,9 +20,7 @@ const Footer = () => {
             <a href="#" className="p-2 rounded-full bg-background border border-border hover:text-accent hover:border-accent transition-all">
               <FiFacebook className="w-4 h-4" />
             </a>
-            <a href="#" className="p-2 rounded-full bg-background border border-border hover:text-accent hover:border-accent transition-all">
-              <FiTwitter className="w-4 h-4" />
-            </a>
+
           </div>
         </div>
 
