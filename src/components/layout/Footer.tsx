@@ -1,14 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FiInstagram, FiFacebook, FiTwitter, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <footer className="bg-muted py-16 px-6 border-t border-border">
+    <footer className="bg-muted/50 py-16 px-6 border-t border-border">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* Brand Info */}
         <div className="space-y-6">
-          <Link href="/" className="text-2xl font-serif font-bold tracking-widest text-foreground">
-            <span className="text-accent">S</span>UHAIN
+          <Link href="/" className="relative h-10 w-32 block">
+            <Image
+              src="/Suhain png.png"
+              alt="SUHAIN"
+              fill
+              className="object-contain"
+            />
           </Link>
           <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
             Crafting timeless fragrances that capture the essence of luxury and sophistication. Each bottle is a masterpiece, designed to evoke emotions and create memories.
@@ -58,7 +64,7 @@ const Footer = () => {
                 className="w-full bg-background border border-border px-4 py-3 rounded-md text-sm focus:outline-none focus:ring-1 focus:ring-accent"
               />
             </div>
-            <button className="w-full gold-gradient text-white py-3 rounded-md text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">
+            <button className="w-full bg-primary text-primary-foreground py-3 rounded-md text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">
               Subscribe
             </button>
           </form>

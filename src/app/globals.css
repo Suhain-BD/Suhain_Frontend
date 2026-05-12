@@ -1,47 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  --background: hsl(164, 25%, 98%);
-  --foreground: hsl(164, 30%, 10%);
+  --background: hsl(330, 10%, 98%);
+  --foreground: hsl(330, 33%, 10%);
 
-  --primary: hsl(164, 100%, 15%);
-  --primary-foreground: hsl(164, 25%, 98%);
+  --primary: hsl(330, 33%, 22%);
+  --primary-foreground: hsl(330, 10%, 98%);
 
   --secondary: hsl(43, 52%, 42%);
-  --secondary-foreground: hsl(164, 25%, 98%);
+  --secondary-foreground: hsl(330, 10%, 98%);
 
   --accent: hsl(43, 100%, 65%);
-  --accent-foreground: hsl(164, 30%, 10%);
+  --accent-foreground: hsl(330, 33%, 10%);
 
-  --muted: hsl(164, 15%, 90%);
-  --muted-foreground: hsl(164, 15%, 40%);
+  --muted: hsl(330, 10%, 90%);
+  --muted-foreground: hsl(330, 15%, 40%);
 
-  --border: hsl(164, 15%, 85%);
-  --input: hsl(164, 15%, 85%);
-  --ring: hsl(164, 100%, 15%);
+  --border: hsl(330, 10%, 85%);
+  --input: hsl(330, 10%, 85%);
+  --ring: hsl(330, 33%, 22%);
 
   --radius: 0.75rem;
 }
 
 .dark {
-  --background: hsl(164, 30%, 4%);
-  --foreground: hsl(164, 25%, 98%);
+  --background: hsl(330, 30%, 4%);
+  --foreground: hsl(330, 10%, 98%);
 
-  --primary: hsl(164, 100%, 18%);
-  --primary-foreground: hsl(164, 25%, 98%);
+  --primary: hsl(330, 33%, 25%);
+  --primary-foreground: hsl(330, 10%, 98%);
 
   --secondary: hsl(43, 52%, 42%);
-  --secondary-foreground: hsl(164, 25%, 98%);
+  --secondary-foreground: hsl(330, 10%, 98%);
 
   --accent: hsl(43, 100%, 60%);
-  --accent-foreground: hsl(164, 30%, 4%);
+  --accent-foreground: hsl(330, 30%, 4%);
 
-  --muted: hsl(164, 20%, 12%);
-  --muted-foreground: hsl(164, 15%, 65%);
+  --muted: hsl(330, 20%, 12%);
+  --muted-foreground: hsl(330, 15%, 65%);
 
-  --border: hsl(164, 20%, 18%);
-  --input: hsl(164, 20%, 18%);
-  --ring: hsl(164, 100%, 25%);
+  --border: hsl(330, 20%, 18%);
+  --input: hsl(330, 20%, 18%);
+  --ring: hsl(330, 33%, 30%);
 }
 
 @theme inline {

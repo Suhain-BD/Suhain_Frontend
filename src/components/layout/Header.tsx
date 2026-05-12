@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FiShoppingBag, FiSearch, FiMenu, FiX, FiUser } from "react-icons/fi";
 import { cn } from "@/lib/utils";
@@ -49,9 +50,15 @@ const Header = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="text-2xl font-serif font-bold tracking-widest text-foreground flex items-center gap-2"
+          className="relative h-12 w-40 hover:opacity-80 transition-opacity"
         >
-          <span className="text-accent">S</span>UHAIN
+          <Image
+            src="/Suhain png.png"
+            alt="SUHAIN"
+            fill
+            className="object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -98,7 +105,14 @@ const Header = () => {
       >
         <div className="p-6">
           <div className="flex items-center justify-between mb-12">
-            <span className="text-2xl font-serif font-bold tracking-widest">SUHAIN</span>
+            <div className="relative h-10 w-32">
+              <Image
+                src="/Suhain png.png"
+                alt="SUHAIN"
+                fill
+                className="object-contain"
+              />
+            </div>
             <button onClick={() => setIsMobileMenuOpen(false)}>
               <FiX className="w-8 h-8" />
             </button>
