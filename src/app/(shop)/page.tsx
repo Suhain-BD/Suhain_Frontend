@@ -33,7 +33,7 @@ export default function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="inline-block px-4 py-1.5 rounded-full glass-dark text-xs font-bold tracking-[0.3em] uppercase text-accent mb-6 border border-accent/20 mt-16">
+            <span className="inline-block px-4 py-1.5 rounded-full glass-dark text-xs font-bold tracking-[0.3em] uppercase text-white mb-6 border border-accent/20 mt-16">
               Luxury Collection 2026
             </span>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-8 tracking-tight leading-[1.1]">

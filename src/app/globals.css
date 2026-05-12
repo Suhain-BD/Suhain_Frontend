@@ -4,14 +4,14 @@
   --background: hsl(330, 10%, 98%);
   --foreground: hsl(330, 33%, 10%);
 
-  --primary: hsl(330, 33%, 22%);
+  --primary: #492537;
   --primary-foreground: hsl(330, 10%, 98%);
 
-  --secondary: hsl(43, 52%, 42%);
+  --secondary: hsl(330, 20%, 40%);
   --secondary-foreground: hsl(330, 10%, 98%);
 
-  --accent: hsl(43, 100%, 65%);
-  --accent-foreground: hsl(330, 33%, 10%);
+  --accent: #492537;
+  --accent-foreground: hsl(330, 10%, 98%);
 
   --muted: hsl(330, 10%, 90%);
   --muted-foreground: hsl(330, 15%, 40%);
@@ -27,14 +27,14 @@
   --background: hsl(330, 30%, 4%);
   --foreground: hsl(330, 10%, 98%);
 
-  --primary: hsl(330, 33%, 25%);
+  --primary: #492537;
   --primary-foreground: hsl(330, 10%, 98%);
 
-  --secondary: hsl(43, 52%, 42%);
+  --secondary: hsl(330, 20%, 45%);
   --secondary-foreground: hsl(330, 10%, 98%);
 
-  --accent: hsl(43, 100%, 60%);
-  --accent-foreground: hsl(330, 30%, 4%);
+  --accent: #492537;
+  --accent-foreground: hsl(330, 10%, 98%);
 
   --muted: hsl(330, 20%, 12%);
   --muted-foreground: hsl(330, 15%, 65%);
@@ -90,7 +90,7 @@
   }
 
   .gold-gradient {
-    @apply bg-linear-to-r from-[#B8860B] via-[#FFD700] to-[#DAA520];
+    @apply bg-linear-to-r from-[#492537] via-[#492537] to-[#492537];
   }
 }
 
