@@ -11,7 +11,7 @@ import { products } from "@/lib/data";
 
 const ProductsPage = () => {
   const [activeCategory, setActiveCategory] = React.useState("All");
-  const categories = ["All", "For Him", "For Her", "Signature", "Unisex"];
+  const categories = ["All", "For Him", "For Her", "Signature", "Unisex", "Best Sellers"];
 
   const filteredProducts = activeCategory === "All"
     ? products

@@ -47,9 +47,11 @@ export default function HomePage() {
               <Button size="lg" variant="gold" className="w-full sm:w-auto px-10 rounded-full">
                 Shop Collection
               </Button>
-              <Button size="lg" variant="glass" className="w-full sm:w-auto px-10 rounded-full group">
-                Discover Story <FiArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link href={"/about"}>
+                <Button size="lg" variant="glass" className="w-full sm:w-auto px-10 rounded-full group">
+                  Discover Story <FiArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>

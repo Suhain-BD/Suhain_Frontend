@@ -74,6 +74,10 @@
     @apply bg-background text-foreground antialiased selection:bg-accent/30 selection:text-accent-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+
+  button {
+    cursor: pointer;
+  }
 }
 
 @layer utilities {

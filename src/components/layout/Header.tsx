@@ -24,7 +24,7 @@ const Header = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Shop All", href: "/products" },
-    { name: "Best Sellers", href: "/products?filter=best-sellers" },
+
     { name: "Collections", href: "/collections" },
     { name: "Our Story", href: "/about" },
   ];
