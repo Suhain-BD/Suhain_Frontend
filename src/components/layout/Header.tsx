@@ -79,9 +79,9 @@ const Header = () => {
 
         {/* Actions */}
         <div className="flex items-center gap-4">
-          <button className="text-foreground/80 hover:text-accent transition-colors hidden sm:block">
+          {/* <button className="text-foreground/80 hover:text-accent transition-colors hidden sm:block">
             <FiSearch className="w-5 h-5" />
-          </button>
+          </button> */}
           <Link href="/account" className="text-foreground/80 hover:text-accent transition-colors hidden sm:block">
             <FiUser className="w-5 h-5" />
           </Link>
